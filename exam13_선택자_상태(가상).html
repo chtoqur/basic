@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* enabled : 선택, 클릭, 입력, 포커스를 받을 수 있는 상태 */
+        input:enabled {
+            background-color: aqua;
+        }
+        input:disabled {
+            background-color: gray;
+        }
+        input:focus {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <input type="text">
+    <br><br>
+    <input type="text" disabled>
+    <!-- disabled="disabled" 뒷부분 생략 가능, 비활성화 명령어 -->
+    
+</body>
+</html>

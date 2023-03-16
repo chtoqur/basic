@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* +기호는 동위 선택자, h1 다음에 있는 h2 하나를 선택 */
+        h1 + h2 {
+            color: blueviolet;
+        }
+
+        /* h1 다음에 오는 모든 h2를 선택 (동위) */
+        h1 ~ h2 {
+            background-color: grey;
+        }
+    </style>
+</head>
+<body>
+    <!-- h1과 h2의 관계=동위관계 -->
+    <h1>Header-1</h1>
+    <h2>Header-2</h2>
+    <h2>Header-2</h2>
+    <h2>Header-2</h2>
+    <h2>Header-2</h2>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*ol 하위의 li 스타일 변경, >(자식 선택자)*/
+        ol > li {
+            color:red;
+        }
+        /*body > ul > li로 표현해도 동일한 결과, 꺽쇠 여러개 사용 가능*/
+        ul > li {
+            color:blue;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>개회사</li>
+        <li>본식</li>
+        <li>폐회사</li>
+    </ol>
+
+    <ul>
+        <li>개회사</li>
+        <li>본식</li>
+        <li>폐회사</li>
+    </ul>
+</body>
+</html>
