@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let str1 = "abc";
+        let str2 = "def";
+        let str3 = str1 + str2;
+        let str4 = "111" + "222";
+
+        console.log(str3);
+        console.log(str4);
+
+        let a1 = 40;
+        let a2 = 20;
+        // 피연산자가 연산자의 성격을 정의한다
+        
+        // 연산(-)의 결과를 도출할 수 없을 때
+        // NaN(Not a Number)라는 값을 넣어준다.
+        let str5 = "abc" - "def";
+        console.log(str5);
+        
+        console.log(a1 + a2);
+
+        // 피연산자가 서로 다른 경우
+        // 한쪽의 타입을 강제적으로 바꾼 후 연산
+        console.log(a1 + str1);
+
+    </script>
+</body>
+</html>
