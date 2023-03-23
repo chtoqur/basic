@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let a = 10;
+        // 전위 단항 연산자 (증가하고 뭔가 해라)
+        // 1. a를 증가시켜라.
+        // 2. a를 console.log의 파라미터로 넣어라.
+        console.log(++a); // a = a + 1;
+
+        // 후위 단항 연산자 (뭔가 하고 증가해라)
+        // 1. a를 console.log의 파라미터로 넣어라.
+        // 2. a를 증가시켜라
+        console.log(a++); // a = a + 1;
+        console.log(a); // a = a + 1;
+
+        a++;
+        ++a;
+        // 두개는 전후로 처리해야 하는 연산이 없어서
+        // 증감, 감소만 처리하면 되기 때문에 같은 코드임
+
+        --a;
+        a--;
+
+        // 잘못된 코드
+        let b = 20;
+        console.log(b++ + a--);
+
+        // b를 하나 증가
+        // a를 하나 감소
+        // 두 값을 더하라
+        b = b + 1;
+        a = a - 1;
+        a + b
+
+        // 단항 연산자를 복합적으로 사용하는 것은 지양해야함
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let type = prompt("타입을 입력하세요","1~4");
+        numType = Number(type);
+
+        let rec = prompt("숫자를 입력하세요","");
+        numRec = Number(rec);
+
+        if (numType === 1)
+        {
+            let line = "";
+
+            for (let i = 0; i < numRec; i++)
+            {
+                for (let j = 0; j < i+1; j++)
+                {
+                    line = line + "*";
+                }
+
+                console.log(line)
+                line="";
+            }
+        }
+
+        if (numType === 2)
+        {
+            let line = "";
+            let spaceCount = 0;
+            let starCount = numRec - spaceCount;
+
+            for (let i = 0; i < numRec; i++)
+            {
+            // spaceCount = numRec - starCount
+            // starCount = numRec - spaceCount
+
+            for (let s = 0; s < spaceCount; s++)
+            {
+                line = line + " ";
+            }
+
+            spaceCount++;
+            
+
+            for (let k = 0; k < starCount; k++)
+            {
+                line = line + "*";
+            }
+            
+            console.log(line);
+            starCount--;
+            line = "";
+            }
+        }
+
+        if (numType === 3)
+        {
+            let line = "";
+            let blank = 0;
+            let star = numRec - blank;
+
+            for (let i = 0; i < numRec; i++)
+            {
+                for (let j = 0; j < star; j++)
+                {
+                    line = line + ' '
+                }
+                for (let s = 0; s < )
+                console.log(line)
+
+                blank++;
+                line = "";
+            }
+
+
+        }
+
+
+        if (numType === 4)
+        {   
+            let s = "*";
+            let line = "";
+            let count = numRec;
+
+            for (let i = 0; i < numRec; i++)
+            {
+                for (let k = 0; k < count; k++)
+                {
+                    line = line + s;
+                }
+                console.log(line);
+                line = "";
+                count = count - 1;
+            }
+        }
+
+        // let line = "";
+        // let spaceCount = 0;
+        // let starCount = numRec
+
+        // for (let i = 0; i < numRec; i++)
+        // {
+        //     spaceCount = numRec - starCount
+
+        //     for (let s = 0; s < spaceCount; s++)
+        //     {
+        //         line = line + " ";
+        //     }
+
+        //     for (let k = 0; k < starCount; k++)
+        //     {
+        //         line = line + "*";
+        //     }
+            
+        //     console.log(line);
+        //     starCount--;
+        //     line = "";
+        // }
+
+    </script>
+    
+</body>
+</html>

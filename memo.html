@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+
+        // 1. 배열 만들기 - 배열의 선언 및 초기화
+
+        let ar = [5, 6, 7, 8, 9];
+        // 자바스크립트는 다른 타입을 섞어서 배열로 나열하는 것 가능
+        // 하지만 다른 언어는 같은 데이터 타입만 가능함
+        // let date = ["월", "화", "수", "목", "금", "토", "일", 34, false];
+        let br = [[1, 2, 3, 4], [5, 6], [7, 8, 9]];
+
+        // 2. 배열의 요소 읽기
+
+        // ar의 0번째, 3번째 요소 읽기
+        console.log(ar[0]) // 5
+        console.log(ar[3]) // 8
+
+        // ar의 길이를 읽어보자
+        console.log("길이 : " + ar.length);
+
+        // br의 0번째 요소
+        console.log(br[0]); 
+        console.log(br[2]); 
+        console.log(br[1]); 
+
+        console.log("br의 길이:" + br.length);
+        console.log("br[0]의 길이:" + br[0].length);
+        
+        console.log(br[0][1]); // 2
+        console.log(br[2][2]);
+        console.log(br[1][0]);
+
+        // 3. 배열의 요소 변경
+        
+        // 1) 기존 요소의 값을 바꾼다.
+        br[1][1] = 40;
+        console.log(br[1]);
+
+        // 2) 새로운 요소를 추가한다.
+        br.push([10, 11, 12, 13]);
+        console.log(br);
+
+        br[2].push(99);
+        console.log(br);
+
+        ar.push(10);
+        console.log(ar);
+        ar[ar.length] = 11; // ar[6] = 11; 와 동일한 결과
+        // length는 항상 1을 초과하기 때문에 뒤에 추가되는 값과 자리가 같음
+        console.log(ar);
+
+        // 4. 배열의 요소를 삭제 (splice)
+        // 추가, 변경과 다르게 삭제는 기존 배열의 구조를 파괴시킴
+        // splice 요소는 배열의 기존 요소를 삭제 or 교체 or 추가 모두 가능함
+
+        console.log(ar);
+        ar.splice(2, 2); // '2'번째 요소부터 시작해서 '2'개를 지워라 
+        console.log(ar);
+
+        //  array.splice(start[, deleteCount[, item1[, item2[, ...]]]])
+        //  [는 생략가능함을 뜻함
+        //  splice는 start를 제외한 나머지 생략 가능함
+        //  https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/splice
+
+        //  var myFish = ['angel', 'clown', 'mandarin', 'sturgeon'];
+        //  var removed = myFish.splice(2, 0, 'drum');
+        //  (2번째 인덱스에 추가, 0개를 삭제, 'drum'을 추가)
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

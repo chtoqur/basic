@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let rec = prompt("숫자를 입력하세요","");
+        numRec = Number(rec);
+        
+        let line = "";
+        let spaceCount = 0;
+        let starCount = numRec - spaceCount;
+
+        for (let i = 0; i < numRec; i++)
+        {
+            // spaceCount = numRec - starCount
+            // starCount = numRec - spaceCount
+
+            for (let s = 0; s < spaceCount; s++)
+            {
+                line = line + " ";
+            }
+
+            spaceCount++;
+            
+
+            for (let k = 0; k < starCount; k++)
+            {
+                line = line + "*";
+            }
+            
+            console.log(line);
+            starCount--;
+            line = "";
+        }
+
+    </script>
+    
+</body>
+</html>

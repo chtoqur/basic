@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // for (let i = 0; i < 10; i++)
+        // {
+        //     console.log(i);
+        // }
+
+        // let i = 0;
+        // while(i < 10)
+        // {
+        //     console.log(i);
+        //     i++
+        // }
+
+        // for문과 while문을 사용하는 기준
+        // 반복횟수를 알 때 = for문
+        // 반복횟수를 모를 때 = while문
+        // 다만 for문과 while문은 완벽하게 호환이 가능하기 때문에
+        // 둘 중 어느 것을 사용해도 상관은 없다
+
+        // 1. 1~10까지의 합계를 구해보세요
+        // 2. 사용자에게 숫자를 하나 입력받은 후, 1부터 그 숫자까지 더하시오
+
+        // 1. 사용자로부터 숫자를 입력받고, 그 숫자(문자)를 숫자로 형변환
+        // let num = prompt("숫자를 입력하세요","")
+        // realnum = Number(num)
+        // let sum = 0;
+
+        // let i = 0;
+        // while (i <= realnum)
+        // {
+        //     sum = sum + i
+        //     i++
+        // }
+        // console.log(sum)
+
+        // for(j = 0; j <= realnum; j++)
+        // {
+        //     sum = sum + j
+        // }
+        // console.log(sum)
+
+        // 정답
+
+        let inputNum = prompt("숫자를 입력하세요","")
+        let num = Number(inputNum);
+      
+        let total = 0;
+        let value = 1;
+        let i = 0;
+
+        while (i < num)
+        {
+            total = total + value;
+            value++;
+
+            i++;
+        }
+
+        console.log(total)
+
+    </script>
+    
+</body>
+</html>

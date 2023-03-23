@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // inch를 입력받아 cm로 변환하는 코드를 작성하시오.
+        // 출력은 "xxcm 입니다." 
+
+        // 1. 사용자로부터 inch를 입력받기
+        let inch = prompt("인치를 입력하세요", "inch");
+        // 2. 입력받은 inch를 cm로 변환하기 ( 1inch = 2.54cm )
+        // 2-1. 입력받은 inch를 문자열에서 숫자로 형변환하기
+        inch = Number(inch);
+        // 2-2. inch를 cm로 변환하기
+        let cm = 2.54 * inch;
+        // 3. cm를 출력하기
+        alert(cm + " cm 입니다.")
+
+    </script>
+</body>
+</html>

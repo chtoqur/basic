@@ -7,11 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-
     <script>
-        // alert라는 함수를 실행시키는 것을 "호출(call)"이라고 한다
-        art("안녕하세요!!");
-        alert("안녕하세요!!");
+        let star = "";
+        for (let i = 0; i < 10; i++)
+        {
+                for (let k = 0; k < 10-i; k++)
+                {
+                    star = star + "*";
+                }
+             star = star + "\n";
+        }
+        console.log(star);
     </script>
+    
+    
 </body>
 </html>

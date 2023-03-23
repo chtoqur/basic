@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Jan Feb Mar Apr May Jun July Oct Sep, Nov Dec
+        var month = ["Jan", "Feb", "May", "Oct", "Nov"];
+        console.log(month);
+        // 하나도 제거하지 않고, 2번 인덱스에 "Mar" 추가
+        month.splice(2, 0, "Mar");
+        console.log(month);
+        // 하나도 제거하지 않고, 4번 인덱스에 "Jun", "July" 추가
+        month.splice(4, 0, "Jun", "July");
+        console.log(month);
+        // 7번 인덱스에서 한 개 요소 제거
+        month.splice(7,1);
+        console.log(month);
+        // 6번 인덱스에서 한 개 요소 제거하고 "Dec" 추가
+        month.splice(6,1,"Dec");
+        console.log(month);
+        // 0번 인덱스에서 두 개 요소 제거하고 "a", "b", "c" 추가
+        month.splice(0,2,"a", "b", "c");
+        console.log(month);
+        // 0번 인덱스에서 세 개 요소 제거
+        month.splice(month.length - 8, 3);
+        console.log(month);
+        // -2번 인덱스에서 한 개 요소 제거
+        month.splice(-2,1);
+        console.log(month);
+        // 2번 인덱스를 포함해서 이후의 모든 요소 제거
+        month.splice(2);
+        console.log(month);
+
+        // length - start 값 = 시작점부터의 갯수
+
+
+
+    </script>
+    
+</body>
+</html>

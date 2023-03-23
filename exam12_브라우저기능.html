@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      
+        // 사용자로부터 텍스트 입력을 받는 기능을 가진 함수
+        // let hello = prompt("인사말", "인사말을 써보세요");
+        // 첫번째 파라미터 = 타이틀
+        // 두번째 파라미터 = 입력을 받기 위한 디폴트값
+        // console.log(hello);
+
+        // let yesno = confirm("저장하시겠습니까?");
+        // console.log(yesno);
+        // // > true or false로 출력됨 = boolean의 기능을 수행함
+
+        // 'IPO 관점'으로 주석다는 습관 가지기
+        // Input(입력)-Processing-Output(출력)
+        // 1. 사용자로부터 반지름을 입력받는다.
+        // 2. 반지름을 이용해서 넓이를 구한다.
+        // 3. 넓이를 출력한다.
+       
+        // 1. 사용자로부터 반지름을 입력받는다.
+        let radius = prompt ("반지름", "반지름을 입력하세요.");
+        console.log(radius);
+
+        // 2. 반지름을 이용해서 넓이를 구한다.
+        // 2-1. 입력받은 반지름의 값을 문자열에서 숫자로 형변환한다.
+        let numRadius = Number(radius);
+        const pi = 3.14;
+        // 2-2. 2-1의 결과를 제곱 한 후 3.14를 곱해 넓이를 구한다.
+        let size = numRadius * numRadius * pi;
+        // 3. 넓이를 출력한다.
+        alert("넓이는 " + size + "입니다.")
+
+    </script>
+</body>
+</html>

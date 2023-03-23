@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let line = "";
+        let space = 10; 
+        let star = 0;
+       
+            for (let i = 0; i < 10; i++)
+            {
+                for(let j = 0; j < space; j++)  
+                line = line + " ";
+
+                for(let k = 0; k < (2 * star + 1); k++)
+                line = line + "*";
+                star++;
+            }
+       
+            console.log(line)
+
+            
+                        space--;
+                        line = "";
+            
+
+    </script>
+
+    
+</body>
+</html>

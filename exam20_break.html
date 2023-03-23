@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 사용자의 id가 admin으로 입력 되면 id 입력을 종료.
+
+        let id;
+
+        // while (id !== "admin")
+        // {
+        //     id = prompt("관리자 아이디를 입력하세요","")
+        // }
+
+        while(true) // 무한반복문
+        {
+            if (id === "admin")
+            {
+                break; // 가장 가까운 loof문을 빠져나감. > while문
+                // for-in / for-of는 한 바퀴 순회하는 데 있음 따라서
+                // break 사용해도 의미가 없고 알맞지 않다
+            }
+
+            id = prompt("관리자 아이디를 입력하세요","")
+        }
+
+        alert("환영합니다 관리자님!")
+        
+
+    </script>
+</body>
+</html>

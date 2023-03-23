@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        // 데이터를 메모리에 적재(allocation)하는 방법 4가지
+        // ex. 30을 메모리에 넣을 수 있는 방법은 4가지가 있다.
+
+        // 1. var로 변수를 초기화 (Init)
+        var a1 = 10;
+        // 2. var로 변수를 읽었음 (Read)
+        console.log("a1 : " + a1);
+        // 3. var를 사용해서 변수를 다른 값으로 변경 (Write, Update)
+        a1 = 20
+        console.log("a1 : " + a1);
+
+        // 1. let으로 변수를 초기화 (Init)
+        let a2 = 20;
+        // 2. let으로 변수를 읽었음 (Read)
+        console.log("a2 : " + a2);
+        // 3. let을 사용해서 변수를 다른 값으로 변경 (Write, Update)
+        a2 = a2 + 10;
+        // a2 = left value, a2 + 10 = right value
+        a2 = 30;
+        console.log("a2 : " + a2)
+
+        // var는 ES5이하 버전이고 let에 비해 단점이 있으나
+        // "사용적 측면": (I, R, W)에서만 보면 같다.
+        // 학습을 할 때는 let을 사용할 것이다.
+
+        // 1. const로 변수를 초기화 (Init)
+        const a3 = 30;
+        // 2. const로 변수를 읽었음 (Read)
+        console.log("a3 : " + a3);
+        // 3. const을 사용해서 변수를 다른 값으로 변경 (Write, Update)
+        // a3 = a3 + 1;
+        // >> error. const는 'read only'
+        // const a3;
+        // a3 = 30;
+        // >> error. 이건 초기화가 아니고 대입 연산임(write)
+        // 따라서 38 라인과 다르게 에러. const a3 = 30; >> OK
+        // const는 초기화가 반드시 필요하고 const로 선언된 변수는 read-only
+        
+        a4 = 40;
+        a4 = a4 + 3;
+        console.log("a4 : " + a4);
+        
+        // // 뒤에 있는 a1은 앞의 문자열을 만나서 문자열로 자동 형변환됨
+        // console.log("a4 : " + a4);
+
+        // 별도의 선언 없이 사용하는 것은 부적절하다
+        nama = "정상훈";
+        console.log(nama)
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // for-in 반복문은 배열을 순회하는데 쓰임
+        const job = ["세수", "일지검토", "선풍기청소", "병원가기"]
+
+        // for문으로 배열을 순회 
+        for (let i = 0; i < job.length; i++)
+        {
+            console.log(job[i]);
+        }
+        console.log("--------------------------")
+
+        // for-in문으로 배열을 순회
+        for (const j in job)
+        // const는 read-only인데 가능한 문장인지?
+        // for-in문은 let이 아니라 const를 사용하는 것이 맞음
+        // const는 새로 생성하는 것 X 반복될 때마다
+        // 삭제-생성을 반복함
+        // 암기 방법 : in = index
+        {
+            console.log(job[j])
+        }
+        console.log("--------------------------")
+
+        // for-of문
+        for (const todo of job)
+        {
+            console.log(todo);
+        }
+
+        console.log("--------------------------")
+        for (const leg of job)
+        {
+            console.log(leg);
+        }
+
+    </script>
+</body>
+</html>
