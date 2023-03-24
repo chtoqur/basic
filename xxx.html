@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 1. 사용자로부터 타입과 라인수를 입력 받는다.
+        let type = prompt("타입을 입력하세요","1~5");
+        numType = Number(type);
+
+        let num = prompt("숫자를 입력하세요","");
+        num = Number(num);
+
+        // 2. 타입에 따른 함수를 생성한다.
+        const drawType1 = function(num)
+        {
+            let line = ""
+            let star = 0;
+            for (i = 0; i < num; i++)
+            {
+                for (j = 0; j < star + 1; j++)
+                {
+                    line = line + "*"
+                }
+                console.log(line);
+                line="";
+                star++;
+            }       
+            return line;
+        }
+
+        let line = drawType1(num);
+
+        const drawType2 = function(num)
+        {
+            let line = ""
+            let space = 0;
+            let star = num - space;
+            
+            for (i = 0; i < num; i++)
+            {
+                for (j = 0; j < space; j++)
+                {
+                    line = line + ' '
+                }
+                space++;
+
+                for (s = 0; s < star; s++)
+                {
+                    line = line + '*'
+                    
+                }
+                star--;
+                console.log(line);
+                line="";
+            }
+            return line2;
+        }
+
+        const drawType3 = function(numLine)
+        {
+
+        }
+        const drawType4 = function(numLine)
+        {
+
+        }
+        
+        switch(numType)
+        {
+            case 1:
+
+                drawType1(line);
+                break;
+
+            case 2:
+                drawType2(line2);
+                break;
+
+            case 3:
+                drawType3(line);
+                break;
+
+            case 4:
+                break;
+
+            default :
+                break;
+        }
+
+
+
+
+        // if (numType === 1)
+        // {
+        //     const rec1 = function(numRec)
+        //     {
+        //         let line = "";
+
+        //         for (let i = 0; i < numRec; i++)
+        //         {
+        //             for (let j = 0; j < i+1; j++)
+        //             {
+        //                 line = line + "*";
+        //             }
+
+        //             console.log(line)
+        //             line="";
+        //         }
+        //     }
+        // }
+
+        // if (numType === 2)
+        // {
+        //     let line = "";
+        //     let spaceCount = 0;
+        //     let starCount = numRec - spaceCount;
+
+        //     for (let i = 0; i < numRec; i++)
+        //     {
+        //     // spaceCount = numRec - starCount
+        //     // starCount = numRec - spaceCount
+
+        //     for (let s = 0; s < spaceCount; s++)
+        //     {
+        //         line = line + " ";
+        //     }
+
+        //     spaceCount++;
+            
+
+        //     for (let k = 0; k < starCount; k++)
+        //     {
+        //         line = line + "*";
+        //     }
+            
+        //     console.log(line);
+        //     starCount--;
+        //     line = "";
+        //     }
+        // }
+
+        // if (numType === 3)
+        // {
+        //     let line = "";
+        //     let blank = 0;
+        //     let star = numRec - blank;
+
+        //     for (let i = 0; i < numRec; i++)
+        //     {
+        //         for (let j = 0; j < star; j++)
+        //         {
+        //             line = line + ' '
+        //         }
+        //         // for (let s = 0; s < )
+        //         // console.log(line)
+
+        //         blank++;
+        //         line = "";
+        //     }
+
+
+        // }
+
+
+        // if (numType === 4)
+        // {   
+        //     let s = "*";
+        //     let line = "";
+        //     let count = numRec;
+
+        //     for (let i = 0; i < numRec; i++)
+        //     {
+        //         for (let k = 0; k < count; k++)
+        //         {
+        //             line = line + s;
+        //         }
+        //         console.log(line);
+        //         line = "";
+        //         count = count - 1;
+        //     }
+        // }
+
+        // let line = "";
+        // let spaceCount = 0;
+        // let starCount = numRec
+
+        // for (let i = 0; i < numRec; i++)
+        // {
+        //     spaceCount = numRec - starCount
+
+        //     for (let s = 0; s < spaceCount; s++)
+        //     {
+        //         line = line + " ";
+        //     }
+
+        //     for (let k = 0; k < starCount; k++)
+        //     {
+        //         line = line + "*";
+        //     }
+            
+        //     console.log(line);
+        //     starCount--;
+        //     line = "";
+        // }
+
+    </script>
+    
+</body>
+</html>
