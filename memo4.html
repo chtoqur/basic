@@ -7,17 +7,28 @@
     <title>Document</title>
 </head>
 <body>
+
     <script>
-        let star = "";
-        for (let i = 0; i < 10; i++)
-        {
-                for (let k = 0; k < 10-i; k++)
-                {
-                    star = star + "*";
-                }
-             star = star + "\n";
+
+
+        const f1 = function() {
+            for (let i = 0; i < 5; i++) {
+                console.log(i);
+            }
         }
-        console.log(star);
+
+        const f2 = function() {
+            while(i < 5)
+            {
+                console.log(i);
+                i++;
+            }
+        }
+
+        f2();
+        f1();
+        console.log("i = " + i);
+
     </script>
     
     

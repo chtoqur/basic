@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1~100사이의 숫자 중 소수를 구하는 코드를 작성(소수 prime number)
+        // 소수를 console.log로 출력하고 소수의 개수도 출력하세요
+
+        // 1. 문제를 해결해야 하는데, 일단 공통된 부분이 있나? 공통된 부분이 있다면
+        // 이걸 함수로 구현하면 좀 편하고 읽기도 쉽지 않을까?
+
+        // 2. 소수인지 아닌지를 판단하는게 지속적으로 일어나네!
+        // 그러면 어떤숫자를 소수인지 아닌지 판단하는 함수를 만들어보자.Number
+        
+        // 3. 구현은 나중에 하고 일단 함수 형식부터 만들어보자
+        //      함수는 3가지 함수명, 파라미터, 리턴 값
+        //      함수명 : isPrimeNumber라고 하자!
+        //      리턴값 : true --> 소수 false --> 합성수
+        //      파라미터 : 알고싶은 자연수가 들어가도록
+    
+
+        // 함수 만들기
+        const isPrimeNumber = function(num)
+        {
+            let m = 2;
+            // 2부터 num-1까지 반복되는 for문 생성
+            for (let i = 0; i < num - 2; i++)
+            {
+                if ((num % m) === 0)
+                {
+                    return false;
+                }
+                m++;
+            }
+            return true;
+        }
+
+        let result = [];
+        let num = 1;
+
+        for (let i = 0; i < 100; i++)
+        {
+            if (true === isPrimeNumber(num))
+            {
+                result.push(num);
+            }
+            num++;
+        }
+
+        // 소수 찍어보기
+        for (let j = 0; j < result.length; j++)
+        {
+            console.log(result[j]);
+        }
+
+        console.log("소수의 개수 : " + result.length);
+
+
+
+        // let primeNumber = prompt("원하는 숫자를 입력하세요.", "")
+        // primeNumber = Number(primeNumber)
+
+        // const isPrimeNumber = function(primeNumber)
+        // {
+        //     let num = 2;        
+        //     let result = [];
+
+        //     while (num < primeNumber)
+        //     {
+        //         primeNumber / num
+        //         if (priceNumber % num === 0)
+        //         {
+        //             result.push(priceNumber % num ===0)
+        //             if (result.length === 2)
+        //             {
+        //                 console.log(result)
+        //             }
+        //             else (result.length !== 2)
+        //             {
+        //               return;  
+        //             }
+        //         }
+        //         else
+        //         {
+        //             return;
+        //         }
+        //     }
+        //     num++;
+        //     return true;
+        // }
+
+        // isPrimeNumber;
+       
+
+        // for (let i = 0; i < 100; i++)
+        // {
+        //     if (true == isPrimeNumber(num))
+        //     {
+        //         result.push(num)
+        //     }
+        // }
+
+        // for (let j = 0; j < result.length; j++)
+        // {
+
+        //     console.log(result[j]);
+        // }
+
+        // console.log("소수의 개수 = " + result.length);
+
+
+
+
+
+
+
+        // 1. 사용자로부터 숫자를 입력받고, 문자열을 숫자로 형변환한다
+
+
+        // 2. 
+
+        // for(let i = 0; i < isPrimeNumber; i++)
+        // {
+        //     if(isPrimeNumber % i === 0)
+        //     {
+
+        //     }
+        //     if(isPrimeNumber % i !== 0)
+        //     {
+
+        //     }
+        //     console.log(isPrimeNumber) 
+        // }
+
+        
+
+        // const primeNumber = []
+       
+        // let num = 1;
+        // for (let i = 0; i < 100; i++)
+        // {
+        //     if (true === isPrimeNumber(num))
+        //     {
+        //         primeNumber.push(num);
+        //     }
+        // }
+
+    </script>
+    
+</body>
+</html>
