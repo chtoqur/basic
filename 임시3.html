@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 1. 사용자로부터 숫자를 입력받고, 그 문자를 숫자로 형변환한다
+        // let number = prompt("숫자를 입력하세요")
+        // number = Number(number);
+
+        // // 2. 함수
+
+        // let num = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        // const gugudan = function(number) {
+        // num.forEach(function(value)
+        //     {
+        //         console.log(number + "*" + value + "=" + number * value)
+        //     })
+        // } 
+
+        // // 2-1. 콜백함수
+        // const gugudan_callback = function(func)
+        // {
+        //     func(number)
+        // }
+
+        // // 3. 콘솔창에 출력
+        // gugudan_callback(gugudan)
+
+        let dan = 5;
+        let ar = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+        const gugu = function(value, index)
+        {
+            console.log(dan + "*" + value + "=" + dan * value)
+        }
+
+        ar.forEach(gugu);
+
+        ar.forEach(function(value, index)
+        {
+            console.log(num + "*" + value + "=" + (num * value))
+        }
+        );
+
+        console.log(add(3, 4)) // 와 같은 맥락
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // forEach문 / 요소의 개수만큼 호출하면서 요소의 정보를 넣어줌
+        // const f1 = function (value, index)
+        // {
+        //     console.log(value);
+        //     console.log(index);
+        // }
+        // ar.forEach(f1);
+        
+        let ar = [11, ,22, 33, 44, 55];
+
+        const f1 = function (value, index)
+        {
+            console.log(value);
+            console.log(index);
+        }
+
+        ar.forEach(f1);
+
+        function mycall(func)
+        {
+            for (let i = 0; i < 5; i++)
+            {
+                func(); // 파라메터 안에 들어갈 속성 값이 몇개인지 일치해야함
+                        // f1은 value, index
+
+                        // 콜백함수의 호출자는 기준을 잡아줘야함. 파라메터를 3개 이하의 수 중 하나로
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
